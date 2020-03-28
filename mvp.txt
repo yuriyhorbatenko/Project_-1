@@ -1,0 +1,22 @@
+Topflights MVP
+
+Who is our target audience?
+
+Travel Bloggers
+Adventurous Tourist
+
+What is the problem that the product will address?
+
+We fly to international destinations that our out of the scope of most airlines
+
+What is the primary goal of the product?
+
+Provide exclusive flight deals to our clientele in a user friendly interface
+
+Identify and prioritize essential user stories:
+
+As a user I don't want the hassle of using a difficult interface.
+
+As a user I want to see flights to exclusive destinations.
+
+As a user I want a company to remember the places I've gone before.
