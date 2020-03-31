@@ -1,0 +1,52 @@
+#header {
+    background: rgb(9,9,121);
+    background: radial-gradient(circle, rgba(9,9,121,1) 0%, rgba(5,32,181,1) 70%, rgba(0,48,255,1) 100%);
+    height: 80px;
+    border-bottom: 4px solid rgba(0, 174, 255, 0.904);
+}
+
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 100%;
+}
+
+#imgcol {
+    padding-left: 0px;
+}
+
+#logo {
+    width: 200px;
+    float: left;
+    position: relative;
+}
+
+
+#mainBlock {
+    background-color: blue;
+    height: 500px;
+    margin-top: 8%;
+}
+
+#button1, #button2, #button3, #button4 {
+    background: radial-gradient(circle, rgb(9, 121, 129) 70%, rgb(255, 255, 255) 100%);
+    height: 60px;
+}
+
+
+#button5, #button6, #button7, #button8 {
+    background: radial-gradient(circle, rgb(9, 121, 129) 70%, rgb(255, 255, 255) 100%);
+    height: 60px;
+}
+
+
+#mainContent{
+    height: 380px;
+}
+
+
+#buttonGroup2 {
+    
+}
+
+
