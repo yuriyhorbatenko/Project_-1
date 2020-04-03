@@ -1,5 +1,6 @@
 body {
     background-image: url("../images/maldives.jpg");
+    
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -110,14 +111,12 @@ body {
     background-color: rgba(9, 153, 158, 0.692);
     background: linear-gradient(0deg, rgba(1,83,159,1) 0%, rgba(40,127,233,1) 82%);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.082), 0 6px 20px 0 rgba(0, 0, 0, 0.185);
-    margin-top: 28px;
+    margin-top: 98px;
     margin-left: 425px;
 }
 
 .submitBtn:hover {
     color: rgb(9, 153, 158);
-    
-    
 }
 
 .form-control {
@@ -130,71 +129,5 @@ body {
     font-size: 20px;
     letter-spacing: 0.5px;
     font-weight: 600;
-}
-
-.desc {
-    max-width: 150px;
-    text-align: center;
-    font-size: 17px;
-    font-weight: 500;
-    margin-left: 4%;
-}
-
-.gallery {
-    margin-top: 14%;
-    margin-left: 5%;
-    margin-right: 5%;
-    
     
 }
-
-img {
-    border: 3px solid rgb(13, 196, 202);
-    border-radius: 10px;
-}
-
-.container {
-    position: relative;
-}
-  
-.image {
-    display: block;
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-  
-.overlay {
-    position: absolute;
-    top: 0%;
-    bottom: 0;
-    left: 12.3%;
-    right: 0;
-    height: 160px;
-    width: 160px;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: rgba(13, 196, 202, 0.376);
-    border-radius: 10px;
-    padding-top: 14%;
-    padding-left: 14%;
-}
-  
-.container:hover .overlay {
-    opacity: 1;
-}
-  
-.text {
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-
-

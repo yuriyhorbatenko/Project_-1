@@ -1,5 +1,6 @@
 body {
     background-image: url("../images/maldives.jpg");
+    
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -21,14 +22,12 @@ body {
 #imgcol {
     padding-left: 0px;
     padding-right: 0px;
-
 }
 
 #logo {
     width: 180px;
     float: left;
     position: relative;
-    
 }
 
 #headerText {
@@ -42,7 +41,7 @@ body {
     color: rgba(255, 255, 255, 0.904);
     text-align: center;
     height: 100%;
-    font-size: 24px;
+    font-size: 20px;
     padding-bottom: 4px;
     float: right;
     font-variant: small-caps;
@@ -50,12 +49,12 @@ body {
     width: 100px;
     text-decoration: none;
     border-radius: 3px;
-    
 }
 
 #AboutUs:hover {
-    background-color: rgba(9, 153, 158, 0.692);
-    box-shadow: -25px 0px 24px -10px rgba(0,0,0,0.20), 25px 0px 24px -10px rgba(0,0,0,0.20);
+    /*background-color: rgba(9, 153, 158, 0.692);*/
+    /*box-shadow: -25px 0px 24px -10px rgba(0,0,0,0.20), 25px 0px 24px -10px rgba(0,0,0,0.20);*/
+    color: rgb(13, 196, 202);
 }
 
 
@@ -78,7 +77,13 @@ body {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom: 4px solid rgb(13, 196, 202);
-    
+    text-align: center;
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.904);
+    font-variant: small-caps;
+    letter-spacing: 1px;
+    padding-top: 0.5rem;
+    font-weight: 600;
 }
 
 
@@ -87,7 +92,7 @@ body {
     background: linear-gradient(0deg, rgba(1,83,159,1) 0%, rgba(40,127,233,1) 82%);
     height: 60px;
     width: 100%;
-    margin-top: 80px;
+    margin-top: 52px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     border-top: 4px solid rgb(13, 196, 202);
@@ -99,7 +104,6 @@ body {
     font-variant: small-caps;
     letter-spacing: 1px;
     font-weight: 600;
-    
 }
 
 
@@ -107,7 +111,8 @@ body {
     background-color: rgba(9, 153, 158, 0.692);
     background: linear-gradient(0deg, rgba(1,83,159,1) 0%, rgba(40,127,233,1) 82%);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.082), 0 6px 20px 0 rgba(0, 0, 0, 0.185);
-    margin-top: 20px;
+    margin-top: 48px;
+    margin-left: 45%;
 }
 
 .submitBtn:hover {

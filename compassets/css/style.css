@@ -1,10 +1,8 @@
-
-
 body {
     background-image: url("../images/maldives.jpg");
+    
     background-repeat: no-repeat;
     background-size: cover;
-    
 }
 
 #header {
@@ -42,27 +40,23 @@ body {
 }
 
 #AboutUs {
-    color: rgb(23, 203, 209);
+    color: rgba(255, 255, 255, 0.904);
     text-align: center;
     height: 100%;
-    font-size: 24px;
+    font-size: 20px;
+    padding-bottom: 4px;
     float: right;
     font-variant: small-caps;
     padding-top: 1.4rem;
     width: 100px;
     text-decoration: none;
     border-radius: 3px;
-    text-shadow: 0px 0px 2px #000000;
-    
-    
 }
 
 #AboutUs:hover {
-    background-color: rgba(13, 196, 202, 0.246);
-    box-shadow: -25px 0px 24px -10px rgba(0,0,0,0.20), 25px 0px 24px -10px rgba(0,0,0,0.20);
-    border-radius: 10px;
-    
-
+    /*background-color: rgba(9, 153, 158, 0.692);*/
+    /*box-shadow: -25px 0px 24px -10px rgba(0,0,0,0.20), 25px 0px 24px -10px rgba(0,0,0,0.20);*/
+    color: rgb(13, 196, 202);
 }
 
 
@@ -72,8 +66,8 @@ body {
     margin-top: 8%;
     padding-left: 0px;
     padding-right: 0px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.356);
 }
 
 
@@ -89,9 +83,9 @@ body {
     font-size: 24px;
     padding: 10px;
     color: rgba(255, 255, 255, 0.904);
-    height: 60px;
+    height: 56px;
     font-variant: small-caps;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     background: linear-gradient(0deg, rgba(1,83,159,1) 0%, rgba(40,127,233,1) 82%);
 }
 
@@ -100,38 +94,33 @@ body {
     font-size: 24px;
     padding: 10px;
     color: rgb(13, 196, 202);
-    height: 60px;
 }
 
 
 
 #bookFlight {
-    font-weight: 600;
-    text-align: center;
-    font-size: 24px;
-    padding: 10px;
-    text-decoration: none;
     background-color: rgba(9, 153, 158, 0.692);
-    color: rgba(255, 255, 255, 0.904);
-    height: 60px;
-    font-variant: small-caps;
-    letter-spacing: 2px;
-    border-radius: 10px;
-    border-top-left-radius: 10px;
-    float: right;
+    background: linear-gradient(0deg, rgba(1,83,159,1) 0%, rgba(40,127,233,1) 82%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.082), 0 6px 20px 0 rgba(0, 0, 0, 0.185);
+    margin-top: 20px;
+    float: left;
+    margin-top: 112px;
+    margin-left: 12px;
+
+
+    
 }
 
 #bookFlight:hover {
     background-color: rgba(255, 255, 255, 0.904);
     color: rgba(9, 153, 158, 0.692);
-    border: 2px solid rgba(9, 153, 158, 0.692);
 }
 
 
 
 #divBookFlight{
     text-align: center;
-    margin-top: 9rem;
+    margin-top: 8rem;
     padding-right: 0px;
 }
 
@@ -164,6 +153,16 @@ body {
 
 #Chile {
     border-bottom-right-radius: 10px;
+}
+
+#flightInfo {
+    text-align: center;
+    margin-top: 8rem;
+}
+
+#forecastInfo {
+    text-align: center;
+    margin-top: 8rem;
 }
 
 
