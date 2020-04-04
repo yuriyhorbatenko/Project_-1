@@ -1,0 +1,82 @@
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+</head>
+
+
+<body>
+<div class="background-wrap">
+    <video id="video-bg-elem" preload="auto" autoplay="true" loop="loop" muted="muted">
+        <source src="Topflight.mp4" type="video/mp4"> </video>
+    <audio src="Mission.mp3" control autoplay loop></audio>
+</div>
+<div class="container">
+<div class="row">
+<div class="col-md-10 offset=md-1">
+<div class="row">
+  
+        
+        
+    </div>
+    <div class="col-md-7 register-right">
+    <h2></h2>
+    <div class="register-form">
+        
+      <div class="container1">
+        <h2>Register Here</h2>
+        <form action="index2.html" method="post">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="submit" value="Login">
+            <button type="button" class="btn-btn-primary">Login with Google</button>
+            <a href="#" class="Google">
+              <i class="fa fa-google fa-fw"></i>
+              <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+              <script>
+                function onSignIn(googleUser) {
+                  // Useful data for your client-side scripts:
+                  var profile = googleUser.getBasicProfile();
+                  console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+                  console.log('Full Name: ' + profile.getName());
+                  console.log('Given Name: ' + profile.getGivenName());
+                  console.log('Family Name: ' + profile.getFamilyName());
+                  console.log("Image URL: " + profile.getImageUrl());
+                  console.log("Email: " + profile.getEmail());
+          
+                  // The ID token you need to pass to your backend:
+                  var id_token = googleUser.getAuthResponse().id_token;
+                  console.log("ID Token: " + id_token);
+                }
+              </script>
+          </div>
+          <div class="container3">
+            <a href="index2.html" style="color:white" class="btn">Sign up</a>
+            </div>
+            <div class="container3">
+              <a href="#" style="color:white" class="btn">Forgot password?</a>
+            </div>
+          <div class="col">
+            </a>
+            
+           
+            </a>
+          </div>
+          </div>
+            </form>
+        </a>      
+          </div>
+        </div>
+    
+    </div>
+    </div>
+
+</div>
+</div>
+</div>
+</body>
+</html>
