@@ -1,0 +1,35 @@
+
+
+.header {
+	z-index: 1;
+	position: relative;
+}
+
+#mainBlock {
+	z-index: 2;
+}
+
+
+.carousel {
+	margin-top: -633px;
+	z-index: 0;
+	height: 900px;
+}
+
+#bottomText {
+	top: 660px;
+}
+
+h5 {
+	font-size: 75px;
+	font-variant-caps: petite-caps;
+	text-shadow: 5px 2px 12px rgba(0, 0, 0, 0.5);
+	letter-spacing: 2px;
+}
+
+p {
+	font-size: 35px;
+	font-variant-caps: petite-caps;
+	text-shadow: 5px 2px 12px rgba(0, 0, 0, 0.5);
+	letter-spacing: 2px;
+}
