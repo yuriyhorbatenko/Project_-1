@@ -13,6 +13,7 @@ var firebaseConfig = {
   // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
+var database = firebase.database();
 var auth = firebase.auth();
 
 
@@ -23,9 +24,33 @@ function signOut() {
 auth.onAuthStateChanged(function(user){
     if(user){
         var email = user.email;
-        alert(user.email)
+        
         
     }else{
         window.location.replace("compindex.html");
     }
-})
+});
+
+
+database.ref().on("child_added", function(childSnapshot) {
+    console.log(childSnapshot.val());
+
+    var passFirstName = childSnapshot.val().firstName;
+    var passLastName = childSnapshot.val().lastName;
+    var passEmail = childSnapshot.val().email;
+    var passNumber = childSnapshot.val().passengers;
+
+    console.log(passFirstName)
+    console.log(passLastName)
+    console.log(passEmail)
+    console.log(passNumber)
+
+    var newRow = $("<tr>").append(
+        $("<td>").text(passFirstName),
+        $("<td>").text(passLastName),
+        $("<td>").text(passEmail),
+        $("<td>").text(passNumber)
+    );
+
+    $("#flightTable > tbody").append(newRow)
+});

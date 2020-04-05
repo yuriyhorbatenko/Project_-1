@@ -1,4 +1,4 @@
-console.log("Hey!s")
+console.log("Hey!")
 
 var firebaseConfig = {
     apiKey: "AIzaSyC_-K0cFpypwOzV9XEKUBRM2VHRR-x_94w",
@@ -22,7 +22,6 @@ $("#signUp").on("click", function signUp() {
     var promise = auth.createUserWithEmailAndPassword(email.value, password.value);
     promise.catch(e => alert(e.message));
 
-    $("#loginStatus").text("Signed Up!")
 });
 
 $("#login").on("click", function signIn(e){
@@ -33,19 +32,17 @@ $("#login").on("click", function signIn(e){
     var promise = auth.signInWithEmailAndPassword(email.value, password.value);
     promise.catch(e => alert(e.message));
 
-    $("#loginStatus").text("Logged In!")
+    
 });
 
-function signOut() {
-    auth.signOut();
-}
+//To be used if we would incorporate "Sign Out" button on first page:
+// function signOut() {
+//     auth.signOut();
+// }
 
 auth.onAuthStateChanged(function(user){
     if(user){
         var email = user.email;
-        alert(user)
         window.location.replace("index2.html");
-    }else{
-        $("#loginStatus").text("Invalid Login")
     }
-})
+});
