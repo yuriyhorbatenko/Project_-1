@@ -1,19 +1,18 @@
 <html>
 <head>
 <title></title>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="compassets/css/compstyle.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <meta name="google-signin-scope" content="profile email">
-    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <!-- <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com"> -->
 </head>
 
 
 <body>
 <div class="background-wrap">
     <video id="video-bg-elem" preload="auto" autoplay="true" loop="loop" muted="muted">
-        <source src="Topflight.mp4" type="video/mp4"> </video>
-    <audio src="Mission.mp3" control autoplay loop></audio>
+        <source src="compassets/video/Topflight.mp4" type="video/mp4"> </video>
+    <audio src="compassets/audio/Mission.mp3"></audio>
 </div>
 <div class="container">
 <div class="row">
@@ -27,17 +26,17 @@
     <h2></h2>
     <div class="register-form">
         
-      <div class="container1">
+      <div id="formContainer" class="container1">
         <h2>Register Here</h2>
-        <form action="index2.html" method="post">
-            <input type="text" name="username" placeholder="Username" required>
-            <input type="password" name="password" placeholder="Password" required>
-            <input type="submit" value="Login">
-            <button type="button" class="btn-btn-primary">Login with Google</button>
+        <form>
+            <input type="text" name="email" placeholder="Email" id="email" required>
+            <input type="password" name="password" placeholder="Password" id="password" required>
+            <input type="submit" value="Login" id="login">
+            <!-- <button type="button" class="btn-btn-primary" id="google-login">Login with Google</button>
             <a href="#" class="Google">
               <i class="fa fa-google fa-fw"></i>
-              <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
-              <script>
+              <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div> -->
+              <!-- <script>
                 function onSignIn(googleUser) {
                   // Useful data for your client-side scripts:
                   var profile = googleUser.getBasicProfile();
@@ -52,13 +51,13 @@
                   var id_token = googleUser.getAuthResponse().id_token;
                   console.log("ID Token: " + id_token);
                 }
-              </script>
+              </script> -->
           </div>
           <div class="container3">
-            <a href="index2.html" style="color:white" class="btn">Sign up</a>
+            <a style="color:white" class="btn" id="signUp">Sign up</a>
             </div>
             <div class="container3">
-              <a href="#" style="color:white" class="btn">Forgot password?</a>
+              <div style="color:white" id="loginStatus" class="btn"></a>
             </div>
           <div class="col">
             </a>
@@ -68,6 +67,7 @@
           </div>
           </div>
             </form>
+            <input type="submit" value="Sign Out" id="signOut">
         </a>      
           </div>
         </div>
@@ -78,5 +78,10 @@
 </div>
 </div>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-auth.js"></script>
+<script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+<script src="compassets/javascript/form.js"></script>
 </body>
 </html>
