@@ -1,5 +1,5 @@
 body {
-    background-image: url("../images/maldives.jpg");
+    font-family: "Merienda";
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -24,16 +24,29 @@ body {
 }
 
 #logo {
-    width: 180px;
+    width: 100px;
     float: left;
     position: relative;
 }
 
+#headerText2{
+    color: rgba(255, 255, 255, 0.904);
+    float: left;
+    font-size: 16px;
+    margin-left: -11.7rem;
+    margin-top: 3rem;
+    font-variant-caps: petite-caps;
+}
+
 #headerText {
     color: rgba(255, 255, 255, 0.904);
-    font-size: 24px;
-    margin-top: 1rem;
+    font-size: 35px;
+    margin-left: 1rem;
     float: left;
+    font-variant-caps: petite-caps;
+    letter-spacing: 1px;
+    height: 30px;
+    text-decoration: underline solid rgba(255, 255, 255, 0.904);
 }
 
 #AboutUs {
@@ -51,8 +64,7 @@ body {
 }
 
 #AboutUs:hover {
-    /*background-color: rgba(9, 153, 158, 0.692);*/
-    /*box-shadow: -25px 0px 24px -10px rgba(0,0,0,0.20), 25px 0px 24px -10px rgba(0,0,0,0.20);*/
+  
     color: rgb(13, 196, 202);
 }
 
@@ -111,13 +123,11 @@ body {
     background: linear-gradient(0deg, rgba(1,83,159,1) 0%, rgba(40,127,233,1) 82%);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.082), 0 6px 20px 0 rgba(0, 0, 0, 0.185);
     margin-top: 28px;
-    margin-left: 425px;
+    margin-left: 300px;
 }
 
 .submitBtn:hover {
     color: rgb(9, 153, 158);
-    
-    
 }
 
 .form-control {
@@ -144,23 +154,19 @@ body {
     margin-top: 14%;
     margin-left: 5%;
     margin-right: 5%;
-    
-    
-}
-
-img {
-    border: 3px solid rgb(13, 196, 202);
-    border-radius: 10px;
 }
 
 .container {
     position: relative;
+    
 }
   
 .image {
     display: block;
     width: 100%;
     height: auto;
+    border-radius: 10px;
+    border: 3px solid rgb(13, 196, 202);
     border-radius: 10px;
 }
   
@@ -176,8 +182,7 @@ img {
     transition: .5s ease;
     background-color: rgba(13, 196, 202, 0.376);
     border-radius: 10px;
-    padding-top: 14%;
-    padding-left: 14%;
+    
 }
   
 .container:hover .overlay {
@@ -194,6 +199,10 @@ img {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
+}
+
+#mainContentRow {
+    margin-left: 7.5rem;
 }
 
 
