@@ -1,5 +1,5 @@
 body {
-    background-image: url("../images/maldives.jpg");
+    /*background-image: url("../images/maldives.jpg");*/
     
     background-repeat: no-repeat;
     background-size: cover;
@@ -46,7 +46,7 @@ body {
     font-size: 20px;
     padding-bottom: 4px;
     float: right;
-    font-variant: small-caps;
+    font-variant-caps: petite-caps;
     padding-top: 1.4rem;
     width: 100px;
     text-decoration: none;
@@ -84,7 +84,7 @@ body {
     padding: 10px;
     color: rgba(255, 255, 255, 0.904);
     height: 56px;
-    font-variant: small-caps;
+    font-variant-caps: petite-caps;
     letter-spacing: 1px;
     background: linear-gradient(0deg, rgba(1,83,159,1) 0%, rgba(40,127,233,1) 82%);
 }
