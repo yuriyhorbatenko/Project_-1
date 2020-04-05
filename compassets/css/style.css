@@ -1,6 +1,5 @@
 body {
-    /*background-image: url("../images/maldives.jpg");*/
-    
+    font-family: "Merienda";
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -26,17 +25,32 @@ body {
 }
 
 #logo {
-    width: 180px;
+    width: 100px;
     float: left;
     position: relative;
+
     
+}
+#headerText2{
+    color: rgba(255, 255, 255, 0.904);
+    float: left;
+    font-size: 16px;
+    margin-left: -11.7rem;
+    margin-top: 3rem;
+    font-variant-caps: petite-caps;
+    
+
 }
 
 #headerText {
     color: rgba(255, 255, 255, 0.904);
-    font-size: 24px;
-    margin-top: 1rem;
+    font-size: 35px;
+    margin-left: 1rem;
     float: left;
+    font-variant-caps: petite-caps;
+    letter-spacing: 1px;
+    height: 30px;
+    text-decoration: underline solid rgba(255, 255, 255, 0.904);
 }
 
 #AboutUs {
@@ -51,11 +65,10 @@ body {
     width: 100px;
     text-decoration: none;
     border-radius: 3px;
+    letter-spacing: 1px;
 }
 
 #AboutUs:hover {
-    /*background-color: rgba(9, 153, 158, 0.692);*/
-    /*box-shadow: -25px 0px 24px -10px rgba(0,0,0,0.20), 25px 0px 24px -10px rgba(0,0,0,0.20);*/
     color: rgb(13, 196, 202);
 }
 
@@ -78,7 +91,7 @@ body {
 
 
 .cityBtn {
-    font-weight: 600;
+    font-weight: 500;
     text-align: center;
     font-size: 24px;
     padding: 10px;
