@@ -64,6 +64,7 @@ body {
     width: 100px;
     text-decoration: none;
     border-radius: 3px;
+    letter-spacing: 1px;
 }
 
 #AboutUs:hover {
