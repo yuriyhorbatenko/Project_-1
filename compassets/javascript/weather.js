@@ -58,3 +58,9 @@ function displayWeather(){
     locationElement.html("<p>" + weatherCity + "</p>");
 }
 
+
+$(document).on("click", ".cityBtn",  function() {
+    var city = document.getElementById;
+    console.log(city)
+    
+});   

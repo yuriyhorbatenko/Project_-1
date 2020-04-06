@@ -16,11 +16,12 @@ firebase.initializeApp(firebaseConfig);
 var database = firebase.database();
 
 $("#bookFlight").on("click", function(event){
+
     event.preventDefault();
 
     var firstName = $("#form_name").val().trim();
     var lastName = $("#form_lastname").val().trim();
-    var email = $("#form_email").val().trim();
+    var email = $("#form_email").val().trim ();
     var numPass = $("#form_need").val().trim();
 
     var passengerInfo = {
@@ -41,4 +42,8 @@ $("#bookFlight").on("click", function(event){
     $("#form_lastname").val("")
     $("#form_email").val("")
     $("#form_need").val("")
+
+    window.location.replace("thankyou.html")
 });
+
+
