@@ -164,13 +164,31 @@ body {
 
 #flightInfo {
     text-align: center;
-    margin-top: 8rem;
+    
 }
 
 #forecastInfo {
     text-align: center;
-    margin-top: 8rem;
+    font-size: 10px;
+    
 }
+
+p {
+    text-align: center;
+    font-size: 25px;
+    
+    
+}
+
+.weather-container {
+    margin-top: -20px;
+}
+
+.app-title {
+    margin-top: 10px;
+}
+
+
 
 
 
