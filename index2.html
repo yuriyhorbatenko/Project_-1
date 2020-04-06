@@ -1,6 +1,6 @@
 <html>
 <head>
-<title></title>
+<title>Top Flight Company Portal</title>
 <link rel="stylesheet" href="compassets/css/style2.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 </head>
@@ -12,7 +12,7 @@
             <source src="compassets/video/flight.mp4" type="video/mp4"> </video>
     </div>
     <div class="col-md-7 register-right">
-        <h2>Sign Up</h2>
+        <h2>Company Portal</h2>
         <!-- <div class="register-form">
             <div class="form-group">
             <input type="text" class="form-control"
@@ -26,12 +26,35 @@
             <input type="Email" class="form-control"
             placeholder="Email">
             </div> -->
+            <div id=bookedFlights>
+                <h3>Current Flight Requests</h3>
+                <table id="flightTable">
+                    <thead>
+                        <tr>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Email</th>
+                            <th>Passengers</th>
+                        </tr>
+                    </thead>
+        
+                    <tbody>
+                        <tr>
+                            <td div="firstName"></td>
+                            <td div="lastName"></td>
+                            <td div="email"></td>
+                            <td div="passengers"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
             <a href="index2.html">
             <button type="button" class="btn btn-primary" onclick="signOut()">Sign Out</button>
             </a>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-database.js"></script>
         <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-auth.js"></script>
         <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
         <script src="compassets/javascript/form2.js"></script>     
