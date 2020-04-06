@@ -1,5 +1,6 @@
 body {
     font-family: "Merienda";
+    background-image: url("../images/thankyou.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -70,7 +71,7 @@ body {
 
 
 #mainBlock {
-    background-color: rgba(255, 255, 255, 0.822);
+    background-color: rgba(255, 255, 255, 0.904);
     height: 450px;
     margin-top: 8%;
     padding-left: 0px;
@@ -122,8 +123,8 @@ body {
     background-color: rgba(9, 153, 158, 0.692);
     background: linear-gradient(0deg, rgba(1,83,159,1) 0%, rgba(40,127,233,1) 82%);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.082), 0 6px 20px 0 rgba(0, 0, 0, 0.185);
-    margin-top: 98px;
-    margin-left: 425px;
+    margin-top: 68px;
+    margin-left: 420px;
 }
 
 .submitBtn:hover {
@@ -140,5 +141,6 @@ body {
     font-size: 20px;
     letter-spacing: 0.5px;
     font-weight: 500;
+    text-align: center;
     
 }

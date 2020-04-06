@@ -21,16 +21,14 @@ body {
 #imgcol {
     padding-left: 0px;
     padding-right: 0px;
-
 }
 
 #logo {
     width: 100px;
     float: left;
     position: relative;
-
-    
 }
+
 #headerText2{
     color: rgba(255, 255, 255, 0.904);
     float: left;
@@ -38,8 +36,7 @@ body {
     margin-left: -11.7rem;
     margin-top: 3rem;
     font-variant-caps: petite-caps;
-    
-
+    text-decoration: none;
 }
 
 #headerText {
@@ -72,7 +69,6 @@ body {
     color: rgb(13, 196, 202);
 }
 
-
 #mainBlock {
     background-color: rgba(255, 255, 255, 0.822);
     height: 450px;
@@ -82,8 +78,6 @@ body {
     border-radius: 30px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.356);
 }
-
-
 
 #mainContentRow{
     height: 330px;
@@ -100,6 +94,10 @@ body {
     font-variant-caps: petite-caps;
     letter-spacing: 1px;
     background: linear-gradient(0deg, rgba(1,83,159,1) 0%, rgba(40,127,233,1) 82%);
+    position: relative;
+    overflow: hidden;
+   
+    
 }
 
 .cityBtn:hover {
@@ -107,8 +105,11 @@ body {
     font-size: 24px;
     padding: 10px;
     color: rgb(13, 196, 202);
+    cursor: pointer;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    
 }
-
 
 
 #bookFlight {
@@ -119,9 +120,6 @@ body {
     float: left;
     margin-top: 112px;
     margin-left: 12px;
-
-
-    
 }
 
 #bookFlight:hover {
@@ -129,14 +127,11 @@ body {
     color: rgba(9, 153, 158, 0.692);
 }
 
-
-
 #divBookFlight{
     text-align: center;
     margin-top: 8rem;
     padding-right: 0px;
 }
-
 
 #button1, #button2, #button3, #button4, #button5, #button6, #button7, #button8 {
     padding-left: 0px;
@@ -150,7 +145,6 @@ body {
 #buttonGroup2Row {
     border-top: 4px solid rgb(13, 196, 202);
 }
-
 
 #Maldives {
     border-top-left-radius: 10px;

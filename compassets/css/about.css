@@ -1,5 +1,6 @@
 body {
     font-family: "Merienda";
+    background-image: url("../images/about.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
