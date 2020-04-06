@@ -59,10 +59,22 @@
 
         <div class="row" id="mainContentRow">
             <!-- <div class="col-5" id=""><div class="planeInfo mainInfo" id="flightInfo">Your Flight Info</div></div> -->
-            <div class="col-5" data-skyscanner-widget="SearchWidget"></div>
-<script src="https://widgets.skyscanner.net/widget-server/js/loader.js" async></script>
-            <div class="col-2" id="divBookFlight"><a href="bookflight.html" class="btn btn-success btn-send submitBtn" id="bookFlight">Book Flight</a></div>    
-            <div class="col-5" id=""><div class="weatherInfo mainInfo" id="forecastInfo">Weather Info Coming Soon!</div></div>
+            <div class="col-5" id="skyScanner" data-skyscanner-widget="SearchWidget"></div>
+        <script src="https://widgets.skyscanner.net/widget-server/js/loader.js" async></script>
+            <div class="col-2" id="divBookFlight"><a href="bookflight.html" class="btn btn-success btn-send submitBtn" id="bookFlight">Book Flight</a></div>
+
+            <div class="col-5" id=""><div class="weatherInfo mainInfo">
+
+            <div class="app-title" id="forecastInfo"><p>Weather</p></div>
+              <div class="weather-container" id="forecastInfo">
+                <div class="weather-icon" id="forecastInfo"><img src=""></div>
+                <div class="temperature-value" id="forecastInfo"><p>- °<span>F</span></p></div>
+                <div class="temparature-description" id="forecastInfo"><p> - </p></div>
+                <div class="location" id="forecastInfo"><p>-</p></div>
+              </div>
+            </div>
+
+          </div>
         </div>
         
 
@@ -99,7 +111,7 @@
       <div class="carousel-item active">
         <div class="carousel-caption" id="bottomText">
             <h5>Maldives</h5>
-            <p>The Sunny Side Of Life</p>
+            <p class="lowerText">The Sunny Side Of Life</p1>
           </div>
         <img class="d-block w-100" src="compassets/images/maldives.jpg">
       </div>
@@ -107,7 +119,7 @@
       <div class="carousel-item">
         <div class="carousel-caption" id="bottomText">
             <h5>Tahiti</h5>
-            <p>Let's Go!</p>
+            <p class="lowerText">Let's Go!</p>
           </div>
         <img class="d-block w-100" src="compassets/images/tahiti.jpg">
       </div>
@@ -115,7 +127,7 @@
       <div class="carousel-item">
         <div class="carousel-caption" id="bottomText">
             <h5>Seychelles</h5>
-            <p>Another World</p>
+            <p class="lowerText">Another World</p>
           </div>
         <img class="d-block w-100" src="compassets/images/seychelles.jpg">
       </div>
@@ -123,7 +135,7 @@
       <div class="carousel-item">
         <div class="carousel-caption" id="bottomText">
             <h5>Belize</h5>
-            <p>A Curious Place</p>
+            <p class="lowerText">A Curious Place</p>
           </div>
         <img class="d-block w-100" src="compassets/images/belize.jpg">
       </div>
@@ -131,7 +143,7 @@
       <div class="carousel-item">
         <div class="carousel-caption" id="bottomText">
             <h5>Zanzibar</h5>
-            <p>The Land Of Kilimanjaro</p>
+            <p class="lowerText">The Land Of Kilimanjaro</p>
           </div>
         <img class="d-block w-100" src="compassets/images/zanzibar.jpg">
       </div>
@@ -139,7 +151,7 @@
       <div class="carousel-item">
         <div class="carousel-caption" id="bottomText">
             <h5>Antigua</h5>
-            <p>The Beach Is Just The Beginning</p>
+            <p class="lowerText">The Beach Is Just The Beginning</p>
           </div>
         <img class="d-block w-100" src="compassets/images/antigua.jpg">
       </div>
@@ -147,7 +159,7 @@
       <div class="carousel-item">
         <div class="carousel-caption" id="bottomText">
             <h5>Hawaii</h5>
-            <p>The Life Of The Land Is Perpetuated In Righteousnes</p>
+            <p class="lowerText">The Life Of The Land Is Perpetuated In Righteousnes</p>
           </div>
         <img class="d-block w-100" src="compassets/images/hawaii.jpg">
       </div>
@@ -155,7 +167,7 @@
       <div class="carousel-item">
         <div class="carousel-caption" id="bottomText">
             <h5>Chile</h5>
-            <p>All Are Welcome</p>
+            <p class="lowerText">All Are Welcome</p>
           </div>
         <img class="d-block w-100" src="compassets/images/chile.jpg">
       </div>
@@ -177,13 +189,14 @@
 
     <script type="text/javascript" src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
     <script type="text/javascript" src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="compassets/javascript/background.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="compassets/javascript/weather.js"></script>
+
     
 </body>
 </html>
