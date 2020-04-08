@@ -24,7 +24,8 @@ function setPosition(position){
 }
 
 function getWeather (latitude, longitude) {
-    var queryUrl = "https://api.openweathermap.org/data/2.5/onecall?lat=" + latitude + "&lon=" + longitude + "&units=imperial&appid=" + key;
+    var queryUrl = "https://api.openweathermap.org/data/2.5/weather?lat=" + latitude + "&lon=" + longitude + "&units=imperial&appid=" + key;
+    
     
     fetch(queryUrl)
     .then(function(response){
@@ -34,15 +35,15 @@ function getWeather (latitude, longitude) {
 
     .then(function(data) {
 
-        console.log(data.current.weather[0].icon)
-        console.log(data.current.temp)
-        console.log(data.current.weather[0].description)
-        console.log(data.timezone)
+        console.log(data.weather[0].icon)
+        console.log(data.main.temp)
+        console.log(data.weather[0].description)
+        console.log(data.name)
 
-        weatherIcon = data.current.weather[0].icon;
-        weatherTemp = Math.floor(data.current.temp);
-        weatherDesc = data.current.weather[0].description;
-        weatherCity = data.timezone;
+        weatherIcon = data.weather[0].icon;
+        weatherTemp = Math.floor(data.main.temp);
+        weatherDesc = data.weather[0].description;
+        weatherCity = data.name;
     })
 
     .then(function(){
@@ -59,8 +60,38 @@ function displayWeather(){
 }
 
 
-$(document).on("click", ".cityBtn",  function() {
-    var city = document.getElementById;
-    console.log(city)
+
+$(".cityBtn").click(function() {
+
+    var city = $(this).attr("id");
+    var queryUrlCity = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial&appid=" + key;
     
-});   
+
+        fetch(queryUrlCity)
+
+        .then(function(response){
+            let data = response.json();
+            return data;
+        })
+    
+        .then(function(data) {
+
+            console.log(data.weather[0].icon)
+            console.log(data.main.temp)
+            console.log(data.weather[0].description)
+            console.log(data.name)
+    
+            weatherIconCity = data.weather[0].icon;
+            weatherTempCity = Math.floor(data.main.temp);
+            weatherDescCity = data.weather[0].description;
+            weatherCityCity = data.name;
+        })
+    
+        .then(function(){
+
+            iconElement.html("<img src=compassets/images/icons/" + weatherIconCity + ".png>");
+            tempElement.html("<p>" + weatherTempCity + " °<span>F</span></p>");
+            descElement.html("<p>" + weatherDescCity + "</p>");
+            locationElement.html("<p>" + weatherCityCity + "</p>");
+        });
+});                  
